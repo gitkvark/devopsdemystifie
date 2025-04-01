@@ -1,0 +1,16 @@
+# On peut utiliser direnv pour gérer les variables d'environment.
+# N'oubliez pas à renommer ce fichier à '.envrc'
+
+export TF_VAR_proxmox_endpoint="https://<le serveur proxmox>:8006/"
+export TF_VAR_proxmox_insecure="true"
+export TF_VAR_proxmox_api_token="terraform@pve!terraform=<clé API>"
+export TF_VAR_proxmox_ssh_username="terraform"
+export TF_VAR_proxmox_ssh_private_key_path="~/.ssh/terraform-id_ed25519"
+
+export TF_VAR_proxmox_datastore_id="local"
+export TF_VAR_proxmox_node_name="pve"
+export TF_VAR_proxmox_network_device="vmbr1"
+
+export TF_VAR_cluster_name="homelab"
+export TF_VAR_talos_version="v1.9.3"
+export TF_VAR_kubernetes_version="1.32.0"

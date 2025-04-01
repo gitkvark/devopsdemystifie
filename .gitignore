@@ -1,0 +1,36 @@
+# Ignore all log files
+*.log
+
+# Ignore terraform lock files
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+
+# Ignore generated terraform files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore the .tfvars file if you use it for secrets
+*.tfvars
+
+# Ignore any directories that may contain sensitive data like keys or certificates
+keys/
+certs/
+
+# Ignore compiled packer files, if applicable
+*.pkr.hcl
+*.pkrvars.hcl
+
+# Ignore default terraform cache directory
+.cache/
+
+# Ignore any .terraform directories (they are created when running Terraform commands)
+.terraform/
+
+# Ignore test result files from acceptance tests or similar
+test-results/
+
+# Ignore docker context files, if you're using Docker with Terraform
+docker-context/
+
+# Ignore direnv files
+.envrc
