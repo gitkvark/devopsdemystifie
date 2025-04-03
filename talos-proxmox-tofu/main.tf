@@ -1,9 +1,6 @@
 locals {
-  cluster_name       = var.cluster_name
-  endpoint           = "10.0.1.100"
-  gateway            = "10.0.0.1"
-  talos_version      = var.talos_version
-  kubernetes_version = var.kubernetes_version
+  endpoint = "10.0.1.100"
+  gateway  = "10.0.0.1"
   nodes = {
     "ctrl-00" = {
       machine_type  = "controlplane"
